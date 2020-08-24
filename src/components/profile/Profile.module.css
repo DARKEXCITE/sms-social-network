@@ -1,0 +1,49 @@
+.profile {
+    width: 90%;
+    margin: 10px auto 0;
+    background-color: white;
+    border-radius: 30px;
+    padding: 25px;
+    max-height: 185px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed black;
+    float: left;
+    margin-right: 20px;
+}
+
+.avatar::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.name {
+    font-size: 25px;
+    color: #5757A2;
+    margin-bottom: 15px;
+}
+
+.city,
+.birthday,
+.option > a {
+    font-weight: 300;
+    font-size: 16px;
+    color: #6F6FB1;
+}
+
+.city {
+    margin-bottom: 5px;
+}
+
+.options {
+    float: right;
+    text-align: right;
+}
+
+.option:not(:last-child) {
+    margin-bottom: 10px;
+}

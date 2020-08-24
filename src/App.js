@@ -1,17 +1,14 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/Header.jsx";
-import Sidebar from "./components/Sidebar.jsx";
-import Content from "./components/Content.jsx";
+import Sidebar from "./components/sidebar/Sidebar.jsx";
+import Profile from "./components/profile/Profile.jsx";
 
 function App() {
   return (
     <>
-        <Header />
-
-        <div className="app-wrapper container">
+        <div className="appWrapper">
             <Sidebar />
-            <Content />
+            <Profile />
         </div>
     </>
   );

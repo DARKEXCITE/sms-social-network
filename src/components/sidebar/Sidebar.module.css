@@ -1,0 +1,24 @@
+.sidebar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #C8C8E1;
+}
+
+.logo {
+    height: 35px;
+}
+
+.item:first-child {
+    margin-bottom: 50px;
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+.item.active svg path {
+    stroke: white;
+}
