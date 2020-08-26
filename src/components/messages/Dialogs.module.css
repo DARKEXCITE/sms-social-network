@@ -1,0 +1,37 @@
+.dialogs {
+    padding: 20px 10px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 24%;
+    margin-right: 2%;
+}
+
+.dialog {
+    display: flex;
+    align-items: center;
+}
+
+.dialog:not(:last-child) {
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(111, 111, 117, .3);
+    padding-bottom: 20px;
+}
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #ae9fd9;
+    margin-right: 15px;
+}
+
+.name {
+    margin-bottom: 5px;
+    color: #6F6FB1;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.message {
+    font-size: 14px;
+}

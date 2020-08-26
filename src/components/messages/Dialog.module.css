@@ -1,0 +1,95 @@
+.dialog {
+    padding: 25px 15px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 74%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    border-bottom: 1px solid rgba(111, 111, 117, .3);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.info {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #6F6FB1;
+}
+
+.status {
+    font-size: 16px;
+}
+
+.settings {
+    grid-column-start: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.settings div:not(:last-child) {
+    margin-right: 20px;
+}
+
+.settings div {
+    font-size: 0;
+}
+
+.messages {
+    max-height: 60vh;
+    overflow-y: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.senderMessage,
+.recipientMessage {
+    display: flex;
+    align-items: center;
+}
+
+.message:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.senderMessage {
+    justify-content: flex-end;
+}
+
+.recipientText,
+.senderText {
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    max-width: 400px;
+}
+
+.recipientText {
+    background-color: #4d4d7c;
+}
+
+.senderText {
+    background-color: #6F6FB1;
+}
+
+.recipientAvatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #4d4d7c;
+    margin-right: 20px;
+    border: 3px dotted #6F6FB1;
+}

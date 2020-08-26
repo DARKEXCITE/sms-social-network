@@ -1,21 +1,20 @@
 import React from "react";
 import classes from './Profile.module.css'
+import ProfileNewPost from "./ProfileNewPost.jsx";
+import ProfileHeader from "./ProfileHeader.jsx";
+import ProfilePost from "./ProfilePost.jsx";
 
 const Profile = () => {
     return (
         <div className={ classes.profile }>
-            <div className={ classes.avatar }>
-            </div>
+            <ProfileHeader />
 
-            <div className={ classes.description }>
-                <h3 className={ classes.name }>Иван Петров</h3>
-                <h4 className={ classes.city }>Город: Москва</h4>
-                <h4 className={ classes.birthday }>Дата рождения: 20.04.2001</h4>
-            </div>
+            <ProfileNewPost />
 
-            <div className={ classes.options }>
-                <div className={ classes.option }><a href="#!">Настройки профиля</a></div>
-                <div className={ classes.option }><a href="">Выйти</a></div>
+            <div className={ classes.posts }>
+                <ProfilePost message="My name is Ivan, i'm live in Moscow!"/>
+
+                <ProfilePost message="Hello world!"/>
             </div>
         </div>
     )

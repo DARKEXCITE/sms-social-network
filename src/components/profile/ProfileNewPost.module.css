@@ -1,0 +1,58 @@
+.profilePost {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.postContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.postMessage {
+    width: 900px;
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 15px;
+}
+
+.postMultimedia {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.multimediaItem:not(:last-child) {
+    margin-right: 20px;
+}
+
+.multimediaItem {
+    cursor: pointer;
+}
+
+.multimediaItem svg path {
+    transition: all .1s ease-in-out;
+}
+
+.multimediaItem:hover svg path{
+    fill: #684e8a;
+}
+
+.multimediaBtn {
+    padding: 5px 10px;
+    background-color: #bfa2ee;
+    outline: none;
+    border: 1px solid #684e8a;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.multimediaBtn:active {
+    background-color: #a17dcf;
+    color: #cdcdcd;
+}
