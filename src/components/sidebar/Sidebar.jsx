@@ -1,34 +1,33 @@
 import React from "react";
 import classes from './Sidebar.module.css';
+import {NavLink} from "react-router-dom";
 
 const Sidebar = () => {
     return (
         <aside className={ classes.sidebar }>
             <div className={ classes.item }>
-                <a href="#!">
-                    <img className={ classes.logo } src="logo.png" alt="SMS"/>
-                </a>
+                <img className={ classes.logo } src="logo.png" alt="SMS"/>
             </div>
 
-            <div className={ `${classes.item} ${classes.active}` }>
-                <a href="#!">
+            <div className={ classes.item }>
+                <NavLink to="/profile" activeClassName={ classes.active }>
                     <svg width="30" height="30" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.5001 16.5979C20.1809 16.5979 21.5436 15.2353 21.5436 13.5544C21.5436 11.8735 20.1809 10.5109 18.5001 10.5109C16.8192 10.5109 15.4566 11.8735 15.4566 13.5544C15.4566 15.2353 16.8192 16.5979 18.5001 16.5979Z" stroke="#6F6FB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         <path d="M11.6523 26.4892C11.6523 24.673 12.3737 22.9313 13.6579 21.647C14.9422 20.3628 16.6839 19.6414 18.5001 19.6414C20.3162 19.6414 22.058 20.3628 23.3422 21.647C24.6264 22.9313 25.3479 24.673 25.3479 26.4892" stroke="#6F6FB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         <path d="M18.5001 36C28.1651 36 36.0001 28.165 36.0001 18.5C36.0001 8.83506 28.1651 1.00005 18.5001 1.00005C8.8351 1.00005 1.00008 8.83506 1.00008 18.5C1.00008 28.165 8.8351 36 18.5001 36Z" stroke="#6F6FB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                </a>
+                </NavLink>
             </div>
 
             <div className={ classes.item }>
-                <a href="#!">
+                <NavLink to="/messages" activeClassName={ classes.active }>
                     <svg width="30" height="30" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M27.4917 33.4804C30 35.1776 32.9721 36.0567 36.0001 35.9971C34.4564 33.9893 33.1309 31.8228 32.0462 29.5342C34.8105 26.1414 36.2023 21.8355 35.9467 17.4666C35.6911 13.0978 33.8068 8.98355 30.6657 5.93624C27.5246 2.88894 23.3551 1.13007 18.9805 1.00692C14.6058 0.883765 10.344 2.40528 7.03647 5.27105C3.72893 8.13681 1.61608 12.1385 1.1151 16.4861C0.614125 20.8336 1.76143 25.211 4.33048 28.7539C6.89954 32.2969 10.7036 34.7478 14.9916 35.6229C19.2796 36.4979 23.7399 35.7334 27.4917 33.4804Z" stroke="#6F6FB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         <path d="M10.916 20.0451C11.7558 20.0451 12.4367 19.3642 12.4367 18.5244C12.4367 17.6845 11.7558 17.0037 10.916 17.0037C10.0761 17.0037 9.39524 17.6845 9.39524 18.5244C9.39524 19.3642 10.0761 20.0451 10.916 20.0451Z" stroke="#6F6FB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         <path d="M18.4966 20.0146C19.3365 20.0146 20.0174 19.3338 20.0174 18.4939C20.0174 17.6541 19.3365 16.9732 18.4966 16.9732C17.6568 16.9732 16.9759 17.6541 16.9759 18.4939C16.9759 19.3338 17.6568 20.0146 18.4966 20.0146Z" stroke="#6F6FB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         <path d="M26.1078 20.0146C26.9477 20.0146 27.6286 19.3338 27.6286 18.4939C27.6286 17.6541 26.9477 16.9732 26.1078 16.9732C25.268 16.9732 24.5871 17.6541 24.5871 18.4939C24.5871 19.3338 25.268 20.0146 26.1078 20.0146Z" stroke="#6F6FB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                </a>
+                </NavLink>
             </div>
 
             <div className={ classes.item }>

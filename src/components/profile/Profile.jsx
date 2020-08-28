@@ -1,8 +1,8 @@
 import React from "react";
 import classes from './Profile.module.css'
-import ProfileNewPost from "./ProfileNewPost.jsx";
-import ProfileHeader from "./ProfileHeader.jsx";
-import ProfilePost from "./ProfilePost.jsx";
+import ProfileNewPost from "./profileNewPost/ProfileNewPost.jsx";
+import ProfileHeader from "./profileHeader/ProfileHeader.jsx";
+import ProfilePost from "./profilePost/ProfilePost.jsx";
 
 const Profile = () => {
     return (

@@ -17,8 +17,13 @@
 
 .item {
     margin-bottom: 30px;
+    transition: transform .1s ease-in;
 }
 
-.item.active svg path {
+.item:not(:first-child):hover {
+    transform: scale(1.1);
+}
+
+a.active svg path {
     stroke: white;
 }

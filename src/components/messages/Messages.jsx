@@ -1,7 +1,7 @@
 import React from "react";
 import classes from './Messages.module.css'
-import Dialogs from "./Dialogs";
-import Dialog from "./Dialog";
+import Dialogs from "./dialogs/Dialogs";
+import Dialog from "./dialog/Dialog";
 
 const Messages = () => {
     return (
@@ -12,7 +12,6 @@ const Messages = () => {
 
             <div className={ classes.messagesWindow }>
                 <Dialogs />
-
                 <Dialog />
             </div>
         </div>
