@@ -8,9 +8,9 @@ const ProfileHeader = () => {
             </div>
 
             <div className={ classes.description }>
-                <h3 className={ classes.name }>Иван Петров</h3>
+                <h3 className={ classes.name }>Владимир Пудинг</h3>
                 <h4 className={ classes.city }>Город: Москва</h4>
-                <h4 className={ classes.birthday }>Дата рождения: 20.04.2001</h4>
+                <h4 className={ classes.birthday }>Дата рождения: 07.09.1952</h4>
             </div>
 
             <div className={ classes.options }>

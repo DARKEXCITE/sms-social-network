@@ -1,8 +1,11 @@
 .dialog {
+    display: flex;
+    flex-direction: column;
     padding: 25px 15px;
     background: #FFFFFF;
     border-radius: 30px;
     width: 74%;
+    height: 85vh;
 }
 
 .header {
@@ -49,10 +52,12 @@
 }
 
 .messages {
+    flex-grow: 2;
     max-height: 60vh;
     overflow-y: auto;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    margin-bottom: 10px;
 }
 
 .senderMessage,
@@ -92,4 +97,23 @@
     background-color: #4d4d7c;
     margin-right: 20px;
     border: 3px dotted #6F6FB1;
+}
+
+.messageArea {
+    border: 1px solid #EDEDF5;
+    min-height: 50px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    column-gap: 10px;
+    padding: 10px 20px;
+    /*max-width: 900px;*/
+    max-width: 100%;
+}
+
+.messageSettings {
+    display: flex;
+}
+
+.messageSetting:not(:last-child) {
+    margin-right: 20px;
 }

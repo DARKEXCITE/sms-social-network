@@ -4,17 +4,19 @@ import ProfileNewPost from "./profileNewPost/ProfileNewPost.jsx";
 import ProfileHeader from "./profileHeader/ProfileHeader.jsx";
 import ProfilePost from "./profilePost/ProfilePost.jsx";
 
-const Profile = () => {
+const Profile = (props) => {
+    const postsElement = props.profileState.posts.map(item => {
+        return <ProfilePost id={ item.id } message={ item.message } />
+    })
+
     return (
         <div className={ classes.profile }>
             <ProfileHeader />
 
-            <ProfileNewPost />
+            <ProfileNewPost addPost={props.addPost} />
 
             <div className={ classes.posts }>
-                <ProfilePost message="My name is Ivan, i'm live in Moscow!"/>
-
-                <ProfilePost message="Hello world!"/>
+                { postsElement }
             </div>
         </div>
     )

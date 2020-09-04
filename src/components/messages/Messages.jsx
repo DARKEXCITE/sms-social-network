@@ -3,7 +3,7 @@ import classes from './Messages.module.css'
 import Dialogs from "./dialogs/Dialogs";
 import Dialog from "./dialog/Dialog";
 
-const Messages = () => {
+const Messages = (props) => {
     return (
         <div className={ classes.messages }>
             <div className={ classes.search }>
@@ -11,8 +11,8 @@ const Messages = () => {
             </div>
 
             <div className={ classes.messagesWindow }>
-                <Dialogs />
-                <Dialog />
+                <Dialogs dialogs={ props.messagesState.dialogs } />
+                <Dialog messages={ props.messagesState.messages } />
             </div>
         </div>
     )

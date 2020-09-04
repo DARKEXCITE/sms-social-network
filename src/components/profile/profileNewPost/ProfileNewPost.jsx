@@ -1,11 +1,18 @@
 import React from "react";
 import classes from './ProfileNewPost.module.css'
 
-const ProfileNewPost = () => {
+const ProfileNewPost = (props) => {
+    const newPostElement = React.createRef()
+
+    const addPost = () => {
+        const postText = newPostElement.current.value
+        console.log(postText)
+    }
+
     return (
         <div className={ classes.profilePost }>
             <div className={ classes.postContent }>
-                <div className={ classes.postMessage } placeholder="Напишите что-нибудь! Пусть об этом узнает весь мир!" contentEditable>
+                <div className={ classes.postMessage } ref={ newPostElement } contentEditable={true} suppressContentEditableWarning={true}>
                     Поздоровайтесь!
                 </div>
 
@@ -30,7 +37,7 @@ const ProfileNewPost = () => {
                     </div>
 
                     <div className={ classes.multimediaItem }>
-                        <button className={ classes.multimediaBtn }>Опубликовать</button>
+                        <button onClick={ props.addPost('test') } className={ classes.multimediaBtn }>Опубликовать</button>
                     </div>
                 </div>
             </div>

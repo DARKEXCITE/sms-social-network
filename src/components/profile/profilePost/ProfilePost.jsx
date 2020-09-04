@@ -8,7 +8,7 @@ const ProfilePost = (props) => {
                 <div className={ classes.avatar }>
                 </div>
 
-                <h4 className={ classes.name }>Иван Петров</h4>
+                <h4 className={ classes.name }>Владимир Пудинг</h4>
             </div>
 
 
